@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "name": "test_microservice.py - test_valid_course_with_space_upper",
+      "setup": "",
+      "run": "pytest test_microservice.py -k test_valid_course_with_space_upper",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 1
+    },
+    {
+      "name": "test_microservice.py - test_valid_course_with_space_lower",
+      "setup": "",
+      "run": "pytest test_microservice.py -k test_valid_course_with_space_lower",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "test_microservice.py - test_valid_course_without_space_lower",
+      "setup": "",
+      "run": "pytest test_microservice.py -k test_valid_course_without_space_lower",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "test_microservice.py - test_valid_course_without_space_upper",
+      "setup": "",
+      "run": "pytest test_microservice.py -k test_valid_course_without_space_upper",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "test_microservice.py - test_invalid_course_correct_format",
+      "setup": "",
+      "run": "pytest test_microservice.py -k test_invalid_course_correct_format",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "test_microservice.py - test_invalid_course_incorrect_format",
+      "setup": "",
+      "run": "pytest test_microservice.py -k test_invalid_course_incorrect_format",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "test_microservice.py - test_once_a_week_course_1",
+      "setup": "",
+      "run": "pytest test_microservice.py -k test_once_a_week_course_1",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "test_microservice.py - test_once_a_week_course_2",
+      "setup": "",
+      "run": "pytest test_microservice.py -k test_once_a_week_course_2",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "test_microservice.py - test_multiple_times_a_week_course_1",
+      "setup": "",
+      "run": "pytest test_microservice.py -k test_multiple_times_a_week_course_1",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "test_microservice.py - test_multiple_times_a_week_course_2",
+      "setup": "",
+      "run": "pytest test_microservice.py -k test_multiple_times_a_week_course_2",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    }
+  ]
+}

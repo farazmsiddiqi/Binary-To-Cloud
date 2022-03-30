@@ -1,0 +1,164 @@
+{
+  "tests": [
+    {
+      "name": "`emoji_count` counts one emoji",
+      "setup": "make test",
+      "run": "./test '`emoji_count` counts one emoji'",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 1
+    },
+    {
+      "name": "`emoji_count` counts multiple emoji",
+      "setup": "make test",
+      "run": "./test '`emoji_count` counts multiple emoji'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 3
+    },
+    {
+      "name": "`emoji_count` returns zero with no emojis",
+      "setup": "make test",
+      "run": "./test '`emoji_count` returns zero with no emojis'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "`emoji_count` correctly detects UTF-8 non-emojis",
+      "setup": "make test",
+      "run": "./test '`emoji_count` correctly detects UTF-8 non-emojis'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 3
+    },
+    {
+      "name": "`emoji_invertChar` inverts smiley face into another emoji",
+      "setup": "make test",
+      "run": "./test '`emoji_invertChar` inverts smiley face into another emoji'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "`emoji_invertChar` inverts at least six total emojis",
+      "setup": "make test",
+      "run": "./test '`emoji_invertChar` inverts at least six total emojis'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 3
+    },
+    {
+      "name": "`emoji_invertChar` does not invert string with no emoji",
+      "setup": "make test",
+      "run": "./test '`emoji_invertChar` does not invert string with no emoji'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "`emoji_invertAll` inverts a string of emojis",
+      "setup": "make test",
+      "run": "./test '`emoji_invertAll` inverts a string of emojis'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 3
+    },
+    {
+      "name": "`emoji_random_alloc` allocates new memory",
+      "setup": "make test",
+      "run": "./test '`emoji_random_alloc` allocates new memory'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "`emoji_random_alloc` allocates valid emoji",
+      "setup": "make test",
+      "run": "./test '`emoji_random_alloc` allocates valid emoji'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 3
+    },
+    {
+      "name": "`emoji_random_alloc` allocates random emoji",
+      "setup": "make test",
+      "run": "./test '`emoji_random_alloc` allocates random emoji'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 3
+    },
+    {
+      "name": "`emoji_invertFile_alloc` inverts all smiley faces - short text",
+      "setup": "make test",
+      "run": "./test '`emoji_invertFile_alloc` inverts all smiley faces - short text'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "`emoji_invertFile_alloc` inverts all smiley faces - long text",
+      "setup": "make test",
+      "run": "./test '`emoji_invertFile_alloc` inverts all smiley faces - long text'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "`emoji_invertFile_alloc` invalid file name",
+      "setup": "make test",
+      "run": "./test '`emoji_invertFile_alloc` invalid file name'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "translate simple text - emoji translation works with an empty emoji_t",
+      "setup": "make test",
+      "run": "./test 'translate simple text - emoji translation works with an empty emoji_t'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "translate simple text - emoji translation with one translation",
+      "setup": "make test",
+      "run": "./test 'translate simple text - emoji translation with one translation'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "translate simple text - emoji translation with two translations",
+      "setup": "make test",
+      "run": "./test 'translate simple text - emoji translation with two translations'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "translate simple text - emoji translation with tiebreaks in translation",
+      "setup": "make test",
+      "run": "./test 'translate simple text - emoji translation with tiebreaks in translation'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "translate simple text - emoji translation with tiebreaks (reverse order)",
+      "setup": "make test",
+      "run": "./test 'translate simple text - emoji translation with tiebreaks (reverse order)'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "translate long text - emoji translation with many translations",
+      "setup": "make test",
+      "run": "./test 'translate long text - emoji translation with many translations'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    }
+  ]
+}

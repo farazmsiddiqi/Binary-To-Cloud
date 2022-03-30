@@ -1,0 +1,12 @@
+{
+  "tests": [
+    {
+      "name": "`emoji_favorite` returns a valid emoji",
+      "setup": "make test",
+      "run": "./test '`emoji_favorite` returns a valid emoji'",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 1
+    }
+  ]
+}

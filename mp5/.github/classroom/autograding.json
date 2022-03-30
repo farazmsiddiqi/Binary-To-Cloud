@@ -1,0 +1,116 @@
+{
+  "tests": [
+    {
+      "name": "httprequest_parse_headers - First Header",
+      "setup": "make test",
+      "run": "./test -w NoTests 'httprequest_parse_headers - First Header'",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 2
+    },
+    {
+      "name": "httprequest_parse_headers - Two Headers",
+      "setup": "make test",
+      "run": "./test -w NoTests 'httprequest_parse_headers - Two Headers'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 3
+    },
+    {
+      "name": "httprequest_parse_headers - Content-Length Header",
+      "setup": "make test",
+      "run": "./test -w NoTests 'httprequest_parse_headers - Content-Length Header'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 3
+    },
+    {
+      "name": "httprequest_read - Request Line",
+      "setup": "make test",
+      "run": "./test -w NoTests 'httprequest_read - Request Line'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "httprequest_read - First Header",
+      "setup": "make test",
+      "run": "./test -w NoTests 'httprequest_read - First Header'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "httprequest_read - Two Headers",
+      "setup": "make test",
+      "run": "./test -w NoTests 'httprequest_read - Two Headers'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "httprequest_read - Content-Length Header",
+      "setup": "make test",
+      "run": "./test -w NoTests 'httprequest_read - Content-Length Header'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "httprequest_read - No Content-Length results in a NULL payload",
+      "setup": "make test",
+      "run": "./test -w NoTests 'httprequest_read - No Content-Length results in a NULL payload'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 2
+    },
+    {
+      "name": "httprequest_read - ASCII Payload Data",
+      "setup": "make test",
+      "run": "./test -w NoTests 'httprequest_read - ASCII Payload Data'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 2
+    },
+    {
+      "name": "httprequest_read - Payload Binary Payload",
+      "setup": "make test",
+      "run": "./test -w NoTests 'httprequest_read - Payload Binary Payload'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 2
+    },
+    {
+      "name": "server -- loads `/`",
+      "setup": "make test",
+      "run": "./test -w NoTests 'server -- loads `/`'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 2
+    },
+    {
+      "name": "server -- loads `/240.png`",
+      "setup": "make test",
+      "run": "./test -w NoTests 'server -- loads `/240.png`'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 3
+    },
+    {
+      "name": "server -- loads `/getaway.html`",
+      "setup": "make test",
+      "run": "./test -w NoTests 'server -- loads `/getaway.html`'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 3
+    },
+    {
+      "name": "server -- fails `/not-found.html`",
+      "setup": "make test",
+      "run": "./test -w NoTests 'server -- fails `/not-found.html`'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 2
+    }
+  ]
+}

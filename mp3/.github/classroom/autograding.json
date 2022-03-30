@@ -1,0 +1,92 @@
+{
+  "tests": [
+    {
+      "name": "`./mstats tests/samples_exe/sample1` test (allocation test)",
+      "setup": "make test",
+      "run": "./test '`./mstats tests/samples_exe/sample1` test (allocation test)'",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 2
+    },
+    {
+      "name": "`./mstats tests/samples_exe/sample2` test (allocation test)",
+      "setup": "make test",
+      "run": "./test '`./mstats tests/samples_exe/sample2` test (allocation test)'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 2
+    },
+    {
+      "name": "`./mstats tests/samples_exe/sample3` test (allocation test)",
+      "setup": "make test",
+      "run": "./test '`./mstats tests/samples_exe/sample3` test (allocation test)'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 2
+    },
+    {
+      "name": "`./mstats tests/samples_exe/sample7` test (allocation test with calloc)",
+      "setup": "make test",
+      "run": "./test '`./mstats tests/samples_exe/sample7` test (allocation test with calloc)'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 2
+    },
+    {
+      "name": "`./mstats tests/samples_exe/sample1` test (allocation test with realloc)",
+      "setup": "make test",
+      "run": "./test '`./mstats tests/samples_exe/sample1` test (allocation test with realloc)'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 2
+    },
+    {
+      "name": "sample1, Block Splitting",
+      "setup": "make test",
+      "run": "./test 'sample1, Block Splitting'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 15
+    },
+    {
+      "name": "sample2 - Memory Coalescing",
+      "setup": "make test",
+      "run": "./test 'sample2 - Memory Coalescing'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 5
+    },
+    {
+      "name": "sample3 - Memory Coalescing",
+      "setup": "make test",
+      "run": "./test 'sample3 - Memory Coalescing'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 5
+    },
+    {
+      "name": "sample4 - Memory Coalescing",
+      "setup": "make test",
+      "run": "./test 'sample4 - Memory Coalescing'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 5
+    },
+    {
+      "name": "sample6 - Free Lists",
+      "setup": "make test",
+      "run": "./test 'sample6 - Free Lists'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 5
+    },
+    {
+      "name": "sample8 - Free Lists (realloc)",
+      "setup": "make test",
+      "run": "./test 'sample8 - Free Lists (realloc)'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 5
+    }
+  ]
+}

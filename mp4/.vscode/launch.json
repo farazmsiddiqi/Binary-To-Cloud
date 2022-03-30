@@ -1,0 +1,87 @@
+{
+    // This launch.json file is configured for Windows. If you are using a Mac, 
+    // please change all occurrences of "MIMode": "gdb" to "MIMode": "lldb"
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(dbg) run degree",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/degree",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            // If you are using a Mac, please change "gdb" to "lldb"
+            "MIMode": "gdb",
+            "preLaunchTask": "run make"
+        },
+        {
+            "name": "(dbg) run hedgehog-simple",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/hedgehog-simple",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            // If you are using a Mac, please change "gdb" to "lldb"
+            "MIMode": "gdb",
+            "preLaunchTask": "run make"
+        },
+        {
+            "name": "(dbg) run ping-pong",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/ping-pong",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            // If you are using a Mac, please change "gdb" to "lldb"
+            "MIMode": "gdb",
+            "preLaunchTask": "run make"
+        },
+        {
+            "name": "(dbg) run gacha",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/gacha",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            // If you are using a Mac, please change "gdb" to "lldb"
+            "MIMode": "gdb",
+            "preLaunchTask": "run make"
+        },
+        {
+            "name": "(dbg) run test part 1",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/test",
+            "args": ["[part=1]"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            // If you are using a Mac, please change "gdb" to "lldb"
+            "MIMode": "gdb",
+            "preLaunchTask": "run make test"
+        },
+        {
+            "name": "(dbg) run test part 2",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/test",
+            "args": ["[part=2]"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            // If you are using a Mac, please change "gdb" to "lldb"
+            "MIMode": "gdb",
+            "preLaunchTask": "run make test"
+        }
+    ]
+}

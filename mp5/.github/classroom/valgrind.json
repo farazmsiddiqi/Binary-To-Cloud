@@ -1,0 +1,12 @@
+{
+  "tests": [
+    {
+      "name": "valgrind runs clean",
+      "setup": "make test",
+      "run": "valgrind --leak-check=full --show-leak-kinds=all --error-exitcode=1 ./test",
+      "comparison": "included",
+      "timeout": 2.3000000000000007,
+      "points": 14.0
+    }
+  ]
+}

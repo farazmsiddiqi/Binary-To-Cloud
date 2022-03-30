@@ -1,0 +1,7 @@
+venv/*
+temp/*
+png-extractGIF
+*.dSYM/*
+*.DS_Store
+**/__pycache__
+**/.pytest_cache

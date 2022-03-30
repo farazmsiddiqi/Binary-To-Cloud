@@ -1,0 +1,28 @@
+{
+  "tests": [
+    {
+      "name": "`PNG_open` fails on an invalid filename",
+      "setup": "make test",
+      "run": "./test '`PNG_open` fails on an invalid filename'",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 1
+    },
+    {
+      "name": "`PNG_open` validates a valid PNG signature",
+      "setup": "make test",
+      "run": "./test '`PNG_open` validates a valid PNG signature'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "`PNG_open` fails a non-PNG signature file",
+      "setup": "make test",
+      "run": "./test '`PNG_open` fails a non-PNG signature file'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    }
+  ]
+}

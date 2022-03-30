@@ -1,0 +1,10 @@
+png-analyze
+png-extractGIF
+png-hideGIF
+png-rewrite
+test
+*.o
+*/*.o
+TEST.gif
+TEST.png
+./TEST_*

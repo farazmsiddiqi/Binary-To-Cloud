@@ -1,0 +1,70 @@
+{
+    // This launch.json file is configured for Windows. If you are using a Mac, 
+    // please change all occurrences of "MIMode": "gdb" to "MIMode": "lldb"
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(dbg) run test part 1",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/test",
+            "args": ["[part=1]"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            // If you are using a Mac, please change "gdb" to "lldb"
+            "MIMode": "gdb",
+            "preLaunchTask": "run make test"
+        },
+        {
+            "name": "(dbg) run test part 2",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/test",
+            "args": ["[part=2]"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            // If you are using a Mac, please change "gdb" to "lldb"
+            "MIMode": "gdb",
+            "preLaunchTask": "run make test"
+        },
+        {
+            "name": "(dbg) run test part 3",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/test",
+            "args": ["[part=3]"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            // If you are using a Mac, please change "gdb" to "lldb"
+            "MIMode": "gdb",
+            "preLaunchTask": "run make test"
+        },
+        {
+            "name": "(dbg) launch server",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/server",
+            "args": ["${input:portNumber}"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            // If you are using a Mac, please change "gdb" to "lldb"
+            "MIMode": "gdb",
+            "preLaunchTask": "run make test"
+        }
+    ],
+    "inputs": [
+        {
+          "id": "portNumber",
+          "type": "promptString",
+          "description": "Enter Port Number"
+        }
+    ]
+}

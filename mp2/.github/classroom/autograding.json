@@ -1,0 +1,60 @@
+{
+  "tests": [
+    {
+      "name": "test_extract_gif - correct full content",
+      "setup": "make test",
+      "run": "./test 'test_extract_gif - correct full content'",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 8
+    },
+    {
+      "name": "test_hide_gif - correct full content",
+      "setup": "make test",
+      "run": "./test 'test_hide_gif - correct full content'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 8
+    },
+    {
+      "name": "`PNG_read` returns PNG file chunks correctly",
+      "setup": "make test",
+      "run": "./test '`PNG_read` returns PNG file chunks correctly'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 5
+    },
+    {
+      "name": "`PNG_read` return values correct",
+      "setup": "make test",
+      "run": "./test '`PNG_read` return values correct'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "`PNG_open` writes a PNG header",
+      "setup": "make test",
+      "run": "./test '`PNG_open` writes a PNG header'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "`PNG_write` writes a PNG chunk and CRC",
+      "setup": "make test",
+      "run": "./test '`PNG_write` writes a PNG chunk and CRC'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    },
+    {
+      "name": "`PNG_write` writes a PNG chunk with correct endianness",
+      "setup": "make test",
+      "run": "./test '`PNG_write` writes a PNG chunk with correct endianness'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 1
+    }
+  ]
+}

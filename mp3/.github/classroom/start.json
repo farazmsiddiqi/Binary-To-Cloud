@@ -1,0 +1,12 @@
+{
+  "tests": [
+    {
+      "name": "`./mstats tests/samples_exe/sample0` (avoid segfaults)",
+      "setup": "make test",
+      "run": "./test '`./mstats tests/samples_exe/sample0` (avoid segfaults)'",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 1
+    }
+  ]
+}

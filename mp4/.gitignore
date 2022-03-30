@@ -1,0 +1,12 @@
+degree
+hedgehog-simple
+gacha
+ping-pong
+test
+*.o
+*.so
+
+*.DS_Store
+*.vs_code
+
+*.dSYM/*

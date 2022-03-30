@@ -1,0 +1,12 @@
+{
+    "tests": [
+      {
+        "name": "test_docker.py",
+        "setup": "",
+        "run": "pytest test_docker.py",
+        "comparison": "included",
+        "timeout": 15,
+        "points": 1
+      }
+    ]
+  }

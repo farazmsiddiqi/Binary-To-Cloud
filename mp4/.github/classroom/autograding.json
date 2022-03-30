@@ -1,0 +1,76 @@
+{
+  "tests": [
+    {
+      "name": "Test Initial Get Resource",
+      "setup": "make test",
+      "run": "./test -w NoTests 'Test Initial Get Resource'",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 5
+    },
+    {
+      "name": "Test Initial Negative Delta",
+      "setup": "make test",
+      "run": "./test -w NoTests 'Test Initial Negative Delta'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 5
+    },
+    {
+      "name": "Test Multiple Wallets",
+      "setup": "make test",
+      "run": "./test -w NoTests 'Test Multiple Wallets'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 10
+    },
+    {
+      "name": "Test Large Adds and Subtracts",
+      "setup": "make test",
+      "run": "./test -w NoTests 'Test Large Adds and Subtracts'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 5
+    },
+    {
+      "name": "Test HedgeHog Food and HedgeHogs",
+      "setup": "make test",
+      "run": "./test -w NoTests 'Test HedgeHog Food and HedgeHogs'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 5
+    },
+    {
+      "name": "Test HedgeHog Food and HedgeHogs - Mutex",
+      "setup": "make test",
+      "run": "./test -w NoTests 'Test HedgeHog Food and HedgeHogs - Mutex'",
+      "comparison": "included",
+      "timeout": 0.5,
+      "points": 10
+    },
+    {
+      "name": "Test HedgeHog Food and HedgeHogs - Broadcast",
+      "setup": "make test",
+      "run": "./test -w NoTests 'Test HedgeHog Food and HedgeHogs - Broadcast'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 10
+    },
+    {
+      "name": "Test Degree Program - Successfully Completes",
+      "setup": "make test",
+      "run": "./test -w NoTests 'Test Degree Program - Successfully Completes'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 10
+    },
+    {
+      "name": "ping-pong test",
+      "setup": "make test",
+      "run": "./test -w NoTests 'ping-pong test'",
+      "comparison": "included",
+      "timeout": 0.1,
+      "points": 10
+    }
+  ]
+}
